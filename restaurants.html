@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>Restaurants</title>
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+        <h1>Popular Restaurants in the Ann Arbor Area</h1>
+    </header>
+
+    <body>
+        <h2>Here I’ve collected a few popular restaurants in the area and given them tags to help visitors find the best restaurants that suit their preferences.</h2>
+        <h3>Use the buttons below to discover your next meal!</h3>
+        <main class="grid">
+        <div class="filters">
+            <button type="button" class="filter" data-filter="all">All</button>
+            <button type="button" class="filter" data-filter=".brunch">Brunch</button>
+            <button type="button" class="filter" data-filter=".dinner">Lunch/Dinner</button>
+            <button type="button" class="filter" data-filter=".drive">Drive</button>
+            <button type="button" class="filter" data-filter=".cheap">$</button>
+            <button type="button" class="filter" data-filter=".mid">$$</button>
+            <button type="button" class="filter" data-filter=".expensive">$$$</button>
+
+        </div>
+
+        <div class="restaurant gallery" id = "main">
+            <figure class = "mix dinner mid" tabindex = "0">
+                <img src="images/fritas.jpg" alt="Burger, milkshake, and churro from Frita Batidos">
+                <figcaption>Frita Batidos</figcaption>
+            </figure>
+
+            <figure class = "mix brunch expensive" tabindex = "0">
+                <img src="images/jagged_fork.jpg" alt="Berry crêpes from Jagged Fork">
+                <figcaption>The Jagged Fork</figcaption>
+            </figure>
+    
+            <figure class = "mix brunch dinner cheap" tabindex = "0">
+                <img src="images/amers.jpg" alt="Sandwiches, fries, and chicken tenders from Amer's Deli">
+                <figcaption>Amer's Deli</figcaption>
+
+            </figure>
+
+            <figure class = "mix dinner drive expensive" tabindex = "0">
+                <img src="images/bigalora.jpg" alt="Chicken Parmesan and pasta from Bigalora">
+                <figcaption>Bigalora</figcaption>
+
+            </figure>
+
+            <figure class = "mix dinner expensive" tabindex = "0">
+                <img src="images/aventura.jpg" alt="Three seafood-looking tapas from Aventura">
+                <figcaption>Aventura</figcaption>
+
+            </figure>
+
+            <figure class = "mix dinner cheap" tabindex = "0">
+                <img src="images/joes.jpg" alt="Cheese and white pizza from Joe's Pizza">
+                <figcaption>Joe's Pizza</figcaption>
+
+            </figure>
+
+            <figure class = "mix brunch dinner mid" tabindex = "0">
+                <img src="images/avalon.jpg" alt="Pancakes, salad, eggs, and pastries from Avalon Café">
+                <figcaption>Avalon Café</figcaption>
+
+            </figure>
+
+            <figure class = "mix brunch drive cheap" tabindex = "0">
+                <img src="images/dimos.jpg" alt="Three breakfast bagel sandwiches from Dimo's Deli and Donuts">
+                <figcaption>Dimo's Deli and Donuts</figcaption>
+
+            </figure>
+
+            <figure class = "mix brunch dinner drive mid" tabindex = "0">
+                <img src="images/annas_house.jpg" alt="Breakfast platter from Anna's House">
+                <figcaption>Anna's House</figcaption>
+
+            </figure>
+
+    
+        </div>
+        <script src="js/mixitup.js"></script>
+        <script>
+            var containerEl = document.querySelector('.restaurant');
+    
+            var mixer = mixitup(containerEl);
+        </script>
+    </main>
+    </body>
+</html>
+
+
+
+
+
+  
+
