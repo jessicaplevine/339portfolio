@@ -7,6 +7,9 @@
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 
   <title>Activities</title>
 </head>
@@ -17,27 +20,72 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="restaurants.html">Restaurants</a></li>
-                <li><a href="activities.html">Activities</a></li>
+                <li><a class = "current" href="activities.html">Activities</a></li>
             </ul>
         </nav>
-        <h1>Popular Activities in the Ann Arbor Area</h1>
-        <h2>The city of Ann Arbor is rich with fun activities to do throughout your visit. Here are some of my favorites!</h2>
+        <h1>How to Spend Your Day</h1>
+        <p>The city of Ann Arbor is rich with fun activities to do throughout your visit. Here are some of my favorites!</p>
     </header>
-
+<main>
 <div class="activities" id = "main">
-    <img src="images/football.jpg" alt="A football game in Michigan Stadium" tabindex = "0">
-    <img src="images/hockey.jpg" alt="A hockey game in Yost Arena" tabindex = "0">
-    <img src="images/mden.jpg" alt="The M Den: where to buy all of your Michigan apparel" tabindex = "0">
+    <div class = "sports"> 
+        <h2>For Feeling Sporty:</h2>
+        <div class = "mden">
+            <img src="images/mden.jpg" alt="The M Den: where to buy all of your Michigan apparel" tabindex = "0">
+            <h3>The M Den, located on State Street</h3>
+        </div>
+        <div class = "football">
+            <img src="images/football.jpg" alt="A football game in Michigan Stadium" tabindex = "0">
+            <h3>Michigan Stadium, also known as "The Big House"</h3>
+        </div>
+        <div class = "hockey">
+            <img src="images/hockey.jpg" alt="A hockey game in Yost Arena" tabindex = "0">
+            <h3>Yost Ice Arena, home to Michigan Hockey</h3>
+        </div>
+        <p>The University of Michigan is extremely well known for its athletics program; first and foremost, head to the M Den for all of your apparel needs. If you're in town for a gamdeday, you must visit the Big House for a football game, and/or Yost Arena for a hockey game.</p>
+    </div>
 
-    <img src="images/arb.jpg" alt="A walking trail in Nichols Arboretum" tabindex = "0">
-    <img src="images/law_quad.jpg" alt="The Law Quad in the evening" tabindex = "0">
-    <img src="images/campus.jpg" alt="A birds-eye view of the diag" tabindex = "0">
-
-    <img src="images/farmers_market.jpg" alt="The entrance to the Farmer's Market located in Kerrytown" tabindex = "0">
-    <img src="images/umma.jpg" alt="The interior of the University of Michigan Museum of Art (UMMA)" tabindex = "0">
-    <img src="images/theater.jpg" alt="The State Street Theater sign aglow" tabindex = "0">
-   
+    <div class = "outdoors">
+        <h2>For Taking a Stroll:</h2>
+        <div class = "arb">
+            <img src="images/arb.jpg" alt="A walking trail in Nichols Arboretum" tabindex = "0">
+            <h3>The Arb on a late summer day</h3>
+        </div>
+        <div class = "lawquad">
+            <img src="images/law_quad.jpg" alt="The Law Quad in the evening" tabindex = "0">
+            <h3>The Law Quad at sunset</h3>
+        </div>
+        <div class = "diag">
+            <img src="images/campus.jpg" alt="A birds-eye view of the diag" tabindex = "0">
+            <h3>An overhead view of the Diag</h3>
+        </div>
+        <p>Weather in Ann Arbor might be finicky, but if it's cooperating, Nichols Arboretum (also called The Arb) is the perfect place to get some fresh air and become one with nature. Walking around on campus is also a great activity; I would definitely recommend seeing the gothic architecture in the Law Quad, or walking through the Diag to put yourselves in the shoes of a UM student.</p>
+    </div>
+        
+    <div class = "culture">
+        <h2>For Embracing the Culture:</h2>
+        <div class = "farmersmarket">
+            <img src="images/farmers_market.jpg" alt="The entrance to the Farmer's Market located in Kerrytown" tabindex = "0">
+            <h3>The entrance to the Farmer's Market in Kerrytown</h3>
+        </div>
+        <div class = "umma">
+            <img src="images/umma.jpg" alt="The interior of the University of Michigan Museum of Art (UMMA)" tabindex = "0">
+            <h3>The UMMA main gallery</h3>
+        </div>
+        <div class = "theatre">
+            <img src="images/theater.jpg" alt="The State Street Theater sign aglow" tabindex = "0">
+            <h3>The State Theatre neon sign aglow</h3>
+        </div>
+        <p>Aside from athletics and academics, the greater city of Ann Arbor is full of cultural experiences such as the fruitful Farmer's Market (open Saturday and Wednesday mornings during the summer), the tasteful free-admission University of Michigan Museum of Art (UMMA), and the State Theatre conveniently located one street away from the Diag.</p>
+    </div>
 
 </div>
+</main>
+<footer>
+    <p>Created by Jessica Levine &copy; 2022<br/>
+        University of Michigan School of Information
+    </p>
+</footer>
+
 </body>
 </html>

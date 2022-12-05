@@ -1,0 +1,285 @@
+/* GENERAL PAGE STYLE starting with mobile-first design*/
+body{
+    background: #e7eeff;
+    font-size: 20px;
+    font-family: 'Manrope', serif, 'Times New Roman';
+    color: navy;
+    padding: 2px
+}
+
+.skip a{
+    background: #1237a1;
+    color: #FFFFCC;
+    left: 0px;
+    padding: 6px;
+    position: absolute;
+    left: -300px;
+    -webkit-transition: left 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+}
+
+.skip a:focus{
+    position: absolute;
+    left: 10px
+}
+
+*:focus{
+    border: 2px solid navy
+}
+
+nav li, nav a{
+    display: grid list-item;
+    padding: 5px 0 5px 0;
+    grid-column: 1 / -1;
+    text-decoration: none;
+    color: navy;
+}
+
+nav{
+    text-align: center; 
+    background: #FFFFCC;
+    padding: 15px 0;
+    font-size: 25px;
+    justify-content: space-evenly;
+    color: navy;
+}
+
+nav a:focus, nav a:hover{
+    font-style: bold;
+    border: 2px solid navy;
+    box-shadow: 5px 5px 5px 5px navy;
+}
+
+nav .current{
+    color: #FFFFCC;
+    background: #1237A1;
+    text-transform: uppercase;
+    font-style: bold;
+    text-decoration: none;
+    border: 2px solid #FFDE00;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    padding: 6px;
+}
+
+h3{
+    font-size: 15px;
+    text-align: center;
+    padding: 3px;
+}
+p{
+    text-align: center;
+    padding: 7px;
+    line-height: 1.1;
+}
+
+footer{
+    background: #1237A1;
+    font-family: Geneva;
+    color: #FFFFCC;
+    padding: 15px;
+    text-align: center;
+}
+/* HOME PAGE */
+.homecontainer{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    align-items: center;
+}
+
+.home1 img{
+    margin: auto;
+    width: 100%
+}
+
+ /* ACTIVITIES PAGE */
+.activities img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 75%;
+    width: 75%;
+}
+
+.football, .hockey, .mden, .arb, .lawquad, .diag, .farmersmarket, .umma, .theatre{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* RESTAURANTS PAGE */
+.filter {
+    padding: 5px 20px 20px 20px;
+    line-height: 1;
+    text-decoration: none;
+    color: #000080;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Geneva, serif;
+    border-radius: 20px;
+    height: 30px;
+    border: 2px solid #000080;
+    box-shadow: 0px 6px 0px -2px rgba(18, 55, 161, 1);
+    background-image: linear-gradient(150deg, rgba(255, 228, 34, 1) 25%, rgba(255, 252, 179, 1) 50%, rgba(255, 253, 22, 1) 75%);
+  }
+  
+  .filter:hover {
+    box-shadow: 0 0 #fff;
+    transform: translateY(1px);
+  }
+ .filters{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px 10px 20px
+ }
+
+.container-gallery img{
+    width: 100%;
+    height: 95%;
+}
+
+.container-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fritas, .jfork, .amers, .bigalora, .aventura, .joes, .avalon, .dimos, .annas, .zingermans{
+    background-color: #FFFFCC;
+    border: 2px solid navy;
+    overflow: scroll;
+    padding: 15px;
+    border-radius: 20px;
+    overflow: scroll;
+    width: 300px;
+    height: min-content;
+}
+
+/* media query for tablet and medium-sized screens */
+@media screen and (min-width: 750px){
+    nav li, nav a{
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+    nav{
+        text-align: right;
+    }
+
+    .homecontainer{
+        display: inline;
+    }
+    
+    .home1{
+        max-width: 60%;
+        align-self: center;
+        margin: auto;
+    }
+
+    .sports, .outdoors, .culture{
+        display: flex;
+        margin: 5px;
+        padding: 3px;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .football, .hockey, .mden, .arb, .lawquad, .diag, .farmersmarket, .umma, .theatre{
+        flex-flow: column nowrap;
+        height: fit-content;
+        align-items: center;
+        max-width: 45%;
+        height: 100%;
+    }
+
+    .outdoors{
+        background:#FFFFCC;
+        border: 2px navy dotted
+    }
+
+    .container-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .fritas, .jfork, .amers, .bigalora, .aventura, .joes, .avalon, .dimos, .annas, .zingermans{
+        background-color: #1237a1;
+        border: 2px solid #FFDE00;
+        color: #FFDE00;
+        overflow: scroll;
+        width: 250px;
+        height: 90%;
+    }
+
+}
+
+/* media query for laptop and larger-sized screens */
+@media screen and (min-width: 1025px){
+
+    .sports:last-child, .outdoors:last-child, .culture p{
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .activities h2{
+        width: 100%
+    }
+    .activities img{
+        height: 100%;
+        width: 60%;
+    }
+
+    .football, .hockey, .mden, .arb, .lawquad, .diag, .farmersmarket, .umma, .theatre{
+        flex-flow: column wrap;
+        height: fit-content;
+        align-items: center;
+        max-width: 30%;
+        max-height: 100%;
+    }
+
+    .container-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .fritas, .jfork, .amers, .bigalora, .aventura, .joes, .avalon, .dimos, .annas, .zingermans{
+        background-color: #FFFFCC;
+        border: 2px solid navy;
+        color: navy;
+        width: 250px;
+        overflow: scroll;
+        height: 350px;
+    }
+
+}

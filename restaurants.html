@@ -7,6 +7,9 @@
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 
 
   <title>Restaurants</title>
@@ -17,19 +20,18 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a class = "current" href="restaurants.html">Restaurants</a></li>
                 <li><a href="activities.html">Activities</a></li>
             </ul>
         </nav>
-        <h1>Popular Restaurants in the Ann Arbor Area</h1>
+        <h1>Got a Craving?</h1>
     </header>
-
+    <main class = "container">
     <body>
-        <h2>Here I’ve collected a few popular restaurants in the area and given them tags to help visitors find the best restaurants that suit their preferences.</h2>
-        <h3>Use the buttons below to discover your next meal!</h3>
-        <main class="grid">
+        <p>Here I’ve collected a few popular restaurants in the area and given them tags to help visitors find the best meals that suit their preferences.</p>
+        <h3>Use the buttons below to discover your next meal, then click on an image to visit the website!</h3>
         <div class="filters">
-            <button type="button" class="filter" data-filter="all">All</button>
+            <button type="button" class="filter" data-filter="all">Reset</button>
             <button type="button" class="filter" data-filter=".brunch">Brunch</button>
             <button type="button" class="filter" data-filter=".dinner">Lunch/Dinner</button>
             <button type="button" class="filter" data-filter=".drive">Drive</button>
@@ -39,68 +41,135 @@
 
         </div>
 
-        <div class="restaurant gallery" id = "main">
-            <figure class = "mix dinner mid" tabindex = "0">
-                <img src="images/fritas.jpg" alt="Burger, milkshake, and churro from Frita Batidos">
-                <figcaption>Frita Batidos</figcaption>
+        <div class="container-gallery" id = "main">
+            <figure class = "mix fritas dinner mid" width = "300" tabindex = "0">
+                <a href="https://fritabatidos.com/" target = "_blank">
+                <img src="images/fritas.jpg" alt="Burger, milkshake, and churro from Frita Batidos"></a>
+                <figcaption>
+                    <ul>
+                        <p>Frita Batidos
+                        <li>Cuban Inspired Street food serving burgers (fritas) & milkshakes (batidos), as well as a variety of sides, drinks, and other sweets.</li>
+                    </ul>
+                    
+                </figcaption>
             </figure>
 
-            <figure class = "mix brunch expensive" tabindex = "0">
-                <img src="images/jagged_fork.jpg" alt="Berry crêpes from Jagged Fork">
-                <figcaption>The Jagged Fork</figcaption>
+            <figure class = "mix jfork brunch expensive" width = "300" tabindex = "0">
+                <a href="https://thejaggedfork.com/" target = "_blank">
+                <img src="images/jagged_fork.jpg" alt="Berry crêpes from Jagged Fork"></a>
+                <figcaption>
+                    <ul>
+                        <p>The Jagged Fork</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
     
-            <figure class = "mix brunch dinner cheap" tabindex = "0">
-                <img src="images/amers.jpg" alt="Sandwiches, fries, and chicken tenders from Amer's Deli">
-                <figcaption>Amer's Deli</figcaption>
+            <figure class = "mix amers brunch dinner cheap" width = "300" tabindex = "0">
+                <a href="https://www.amersdeli.com/" target = "_blank">
+                <img src="images/amers.jpg" alt="Sandwiches, fries, and chicken tenders from Amer's Deli"></a>
+                <figcaption>
+                    <ul>
+                        <p>Amer's Deli</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+            <figure class = "mix bigalora dinner drive expensive" width = "300" tabindex = "0">
+                <a href="https://bigalora.com/" target = "_blank">
+                <img src="images/bigalora.jpg" alt="Chicken Parmesan and pasta from Bigalora"></a>
+                <figcaption>
+                    <ul>
+                        <p>Bigalora</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
 
             </figure>
 
-            <figure class = "mix dinner drive expensive" tabindex = "0">
-                <img src="images/bigalora.jpg" alt="Chicken Parmesan and pasta from Bigalora">
-                <figcaption>Bigalora</figcaption>
-
+            <figure class = "mix aventura dinner expensive" width = "300" tabindex = "0">
+                <a href="https://www.aventuraannarbor.com/" target = "_blank">
+                <img src="images/aventura.jpg" alt="Three seafood tapas from Aventura"></a>
+                <figcaption>
+                    <ul>
+                        <p>Aventura</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
 
-            <figure class = "mix dinner expensive" tabindex = "0">
-                <img src="images/aventura.jpg" alt="Three seafood-looking tapas from Aventura">
-                <figcaption>Aventura</figcaption>
-
+            <figure class = "mix joes dinner cheap" width = "300" tabindex = "0">
+                <a href="https://joespizzanyc.appfront.app/" target = "_blank">
+                <img src="images/joes.jpg" alt="Cheese and white pizza from Joe's Pizza"></a>
+                <figcaption>
+                    <ul>
+                        <p>Joe's Pizza</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
 
-            <figure class = "mix dinner cheap" tabindex = "0">
-                <img src="images/joes.jpg" alt="Cheese and white pizza from Joe's Pizza">
-                <figcaption>Joe's Pizza</figcaption>
-
+            <figure class = "mix avalon brunch dinner mid" width = "300" tabindex = "0">
+                <a href="https://avalonbreads.net/pages/avalon-ann-arbor" target = "_blank">
+                <img src="images/avalon.jpg" alt="Pancakes, salad, eggs, and pastries from Avalon Café"></a>
+                <figcaption>
+                    <ul>
+                        <p>Avalon Café</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
 
-            <figure class = "mix brunch dinner mid" tabindex = "0">
-                <img src="images/avalon.jpg" alt="Pancakes, salad, eggs, and pastries from Avalon Café">
-                <figcaption>Avalon Café</figcaption>
-
+            <figure class = "mix dimos brunch drive cheap" width = "300" tabindex = "0">
+                <a href="https://www.dimosdelianddonuts.com/" target = "_blank">
+                <img src="images/dimos.jpg" alt="Three breakfast bagel sandwiches from Dimo's Deli and Donuts"></a>
+                <figcaption>
+                    <ul>
+                        <p>Dimo's Deli and Donuts</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
 
-            <figure class = "mix brunch drive cheap" tabindex = "0">
-                <img src="images/dimos.jpg" alt="Three breakfast bagel sandwiches from Dimo's Deli and Donuts">
-                <figcaption>Dimo's Deli and Donuts</figcaption>
-
+            <figure class = "mix annas brunch dinner drive mid" width = "300" tabindex = "0">
+                <a href="https://annashouseus.com/" target = "_blank">
+                <img src="images/annas_house.jpg" alt="Breakfast platter from Anna's House"></a>
+                <figcaption>
+                    <ul>
+                        <p>Anna's House</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
 
-            <figure class = "mix brunch dinner drive mid" tabindex = "0">
-                <img src="images/annas_house.jpg" alt="Breakfast platter from Anna's House">
-                <figcaption>Anna's House</figcaption>
-
+            <figure class = "mix zingermans dinner expensive" width = "300" tabindex = "0">
+                <a href="https://www.zingermansdeli.com/" target = "_blank">
+                <img src="images/zingermans.jpg" alt="Deli sandwich and brownie from Zingerman's"></a>
+                <figcaption>
+                    <ul>
+                        <p>Zingerman's</p>
+                        <li></li>
+                    </ul>
+                </figcaption>
             </figure>
 
     
         </div>
         <script src="js/mixitup.js"></script>
         <script>
-            var containerEl = document.querySelector('.restaurant');
+            var containerEl = document.querySelector('.container');
     
             var mixer = mixitup(containerEl);
         </script>
     </main>
+    
+    <footer>
+        <p>Created by Jessica Levine &copy; 2022<br/>
+            University of Michigan School of Information
+        </p>
+    </footer>
+
     </body>
 </html>
 
