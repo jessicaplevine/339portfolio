@@ -78,10 +78,15 @@ h3{
     text-align: center;
     padding: 3px;
 }
-p{
+p, li{
     text-align: center;
     padding: 10px;
     line-height: 1.1;
+}
+li:first-child{
+    font-size: 30px;
+    text-align: center;
+    padding: 6px;
 }
 .spotify{
     width: 50%;
