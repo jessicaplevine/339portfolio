@@ -234,6 +234,11 @@ footer{
         background:#FFFFCC;
         border: 2px navy dotted
     }
+    
+    .outdoors{
+        background: #e7eeff;
+        border: none;
+    }
 
     .container-gallery{
         display: grid;
